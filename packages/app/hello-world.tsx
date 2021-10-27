@@ -1,17 +1,14 @@
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text } from 'dripsy';
 
 export function HelloWorld() {
   return (
-    <View style={styles.container}>
-      <Text>Hello, World!</Text>
+    <View sx={{
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: 'slate10',
+    }}>
+      <Text>Hello, World!!!</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
-});
